@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new event</title>
+    <script src="validation.js"></script>
+    <title>Create a New Event</title>
+</head>
+<body>
+    <div id="first">
+        <label for="eType"><b>Event type: </b></label>
+        <select id="Events" name="eType" required onchange="validateDropbox()" required>
+                <option value="Choose one: ">Choose one:</option>
+                <option value="wedding">Wedding</option>
+                <option value="birthday">Bithday</option>
+                <option value="reunion">Reunion</option>
+                
+          </select>
+          <br><br> 
+
+          <label for="Event Title"><b>Event Title: </b></label>
+          <input type="text" name="Event Title" id="11" required> 
+          <br><br> 
+
+          <label for="Date from"><b>Event Dates: </b></label>
+          <input type="text" name="Date from" id="22" required>  to 
+          <input type="text" name="date to" id="33" required>
+          <br><br>
+
+          <label for="Postdates"><b>Posting Dates: </b></label>
+          <input type="text" name="Postdates" id="44" required>
+    </div>
+    <br><br><br>
+    <div id="second">
+        <fieldset>      
+            <input type="checkbox" name="check" value="1st">Is registration required?<br>      
+            <input type="checkbox" name="check" value="2nd">Is this event associated with any Family Programs?<br>      
+            <input type="checkbox" name="check" value="3rd">Upon Registration Completion, Are Users to Receive an Auto Generated Email?<br>
+            <input type="checkbox" name="check" value="4th">Is There a Point of Contact?<br>  
+            <input type="checkbox" name="check" value="5th">Is There a Hosting Command Point of Contact?<br>  
+            <br>      
+        </fieldset> 
+    </div>
+    <br><br>
+    <div id="third">
+        
+        <input type="submit" value="Save" onclick="validate()">
+        <input type="button" value="Cancel">
+    </div>
+    
+</body>
+</html>
